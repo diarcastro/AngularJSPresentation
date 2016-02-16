@@ -1,0 +1,33 @@
+$colorWhite:#FFF;
+$colorBlack:#000;
+$colorBg:#0C0C0C;
+$colorFont:#A5A5A5;
+$colorFont1:#A43737;
+$colorFont2:#FF0000;
+$colorFont3:#C2493C;
+$animationTime: .6s;
+
+.font-ubuntu{
+  font-family: 'Ubuntu';
+}
+
+.animation-in{
+  from {
+    opacity: 0;
+    left:500px;
+  }
+  to {
+    opacity: 1;
+    left:0;
+  }
+}
+.animation-out{
+  from {
+    opacity: 0;
+    left:500px;
+  }
+  to {
+    opacity: 1;
+    left:0;
+  }
+}
