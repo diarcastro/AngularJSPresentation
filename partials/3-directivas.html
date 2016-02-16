@@ -1,0 +1,34 @@
+<div class="page directivas">
+  <div class="title">
+    <h1 class="title sub">Directivas</h1>
+  </div>
+  <p>Es un marker(señal, marcador, indicador) en el DOM(cómo un atributo, elemento, clase css, etc.) que le indica al compilador del angular que este elemento tiene un comoportamiento especifico en el dom</p>
+  <p>
+    En mucha proporción la base del angular son las directivas. 
+  </p>
+  <p>Las directivas del angular por lo general inician con <strong>ng-</strong>&lt;nombre-directiva&gt;</p>
+  <div class="content">
+    <pre>
+    <code class="html">
+&lt;html ng-app=&quot;myApp&quot;&gt;<br />
+  &lt;body ng-controller=&quot;myController&quot;&gt;<br />
+    &lt;a href=&quot;#&quot; ng-click=&quot;isVisible=!isVisible&quot; ng-show=&quot;isVisible&quot;&gt;show Div!&lt;/a&gt;<br />
+    &lt;div class=&quot;div-red&quot; ng-show=&quot;isVisible&quot;&gt;Sorpresa!&lt;/div&gt;<br />
+  &lt;/body&gt;<br />
+&lt;/html&gt;
+    </code>
+    </pre>
+    <div class="top20">
+      
+      <a href="javascript:;" ng-click="isVisible = !isVisible">show Div!</a>
+      <pre>Visible: {{isVisible}}</pre>
+      <div class="div-red" ng-show="isVisible">Visible!</div>
+    </div>
+  </div>
+</div>
+<!--<html ng-app="myApp">
+  <body ng-controller="myController">
+    <a href="" ng-click="isVisible=!isVisible" ng-show="isVisible">show Div!</a>
+    <div class="div-red" ng-show="isVisible">Sorpresa!</div>
+  </body>
+</html>-->

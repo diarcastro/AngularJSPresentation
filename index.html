@@ -1,0 +1,31 @@
+<html ng-app="NgPresentation">
+  <head>
+    <title>Angular Presentation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='//fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body ng-controller="BaseController">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-content relative">
+        <div ng-view class="view-frame"></div>
+      </div>
+      <a href="#" id="linkWatcher"></a>
+    </div>
+  </body>
+</html>
